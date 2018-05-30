@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RecordPage">
+
+    <RelativeLayout
+        android:layout_width="1264dp"
+        android:layout_height="647dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageButton
+            android:id="@+id/demo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignTop="@+id/record"
+            android:layout_marginStart="268dp"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <ImageButton
+            android:id="@+id/record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginBottom="82dp"
+            android:layout_marginEnd="552dp"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <ImageButton
+            android:id="@+id/stop"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/record"
+            android:layout_marginEnd="256dp"
+            app:srcCompat="@drawable/ic_launcher_background" />
+
+        <Button
+            android:id="@+id/logout"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/subtitle"
+            android:layout_marginEnd="37dp"
+            android:text="登出"
+            android:textSize="36sp" />
+
+        <TextView
+            android:id="@+id/q_num"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:text="題數:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@android:dimen/notification_large_icon_height" />
+
+        <TextView
+            android:id="@+id/r_num"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/q_num"
+            android:layout_marginTop="186dp"
+            android:text="次數:"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@android:dimen/notification_large_icon_height" />
+
+        <TextView
+            android:id="@+id/r_times"
+            android:layout_width="150dp"
+            android:layout_height="100dp"
+            android:layout_alignTop="@+id/r_num"
+            android:layout_toEndOf="@+id/q_num"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="@android:dimen/notification_large_icon_height" />
+
+        <TextView
+            android:id="@+id/subtitle"
+            android:layout_width="600dp"
+            android:layout_height="360dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginEnd="273dp"
+            android:layout_marginTop="23dp"
+            android:text="TextView"
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textSize="48sp" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
